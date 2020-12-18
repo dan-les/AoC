@@ -3,5 +3,6 @@
 # Challenge site 
  https://adventofcode.com/
 ## My AOC task solutions
-###  [/day1](Day 1)
 Daniel Leśniewicz, 250996
+*  [/day1](Day 1)
+
