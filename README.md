@@ -1,4 +1,4 @@
-# ACO (Advent of Code)
+# AoC (Advent of Code)
  Advent of Code - year: 2020
 ## Challenge site 
  https://adventofcode.com/
