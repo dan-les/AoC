@@ -4,5 +4,5 @@
  https://adventofcode.com/
 ## My AOC task solutions
 Daniel Leśniewicz, 250996
-*  [/day1](Day 1)
+* see documentation [here](/day1)
 
