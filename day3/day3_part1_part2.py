@@ -5,7 +5,8 @@
 
 # wczytanie z pliku
 with open('inputDay3.txt') as file:
-	treeBoard = [line.rstrip() for line in file]
+    treeBoard = [line.rstrip() for line in file]
+
 
 def main():
     # czesc I
@@ -21,19 +22,20 @@ def main():
     result2 = result2_1 * result1 * result2_3 * result2_4 * result2_5
     print("Part II:", result2)
 
+
 def countTrees(moveX, moveY):
     counter = 0
     currentPositionX = 0
     currentPositionY = 0
-    
+
     treeBoardHeight = len(treeBoard)
     treeBoardWidth = len(treeBoard[0])
 
     # przeszukiwanie drzewa w pionie
     while currentPositionY < treeBoardHeight:
-    	# jesli wyszlismy w poziomie za dostepna plansze
+        # jesli wyszlismy w poziomie za dostepna plansze
         if currentPositionX > treeBoardWidth - 1:
-        	# to cofamy sie o szerokosc planszy do analogicznego punktu
+            # to cofamy sie o szerokosc planszy do analogicznego punktu
             currentPositionX -= treeBoardWidth
 
         # jesli napotakmy drzewo to zwiekszamy licznik
