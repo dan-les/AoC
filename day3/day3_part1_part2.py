@@ -15,11 +15,12 @@ def main():
 
     # czesc II
     result2_1 = countTrees(1, 1)
+    result2_2 = result1
     result2_3 = countTrees(5, 1)
     result2_4 = countTrees(7, 1)
     result2_5 = countTrees(1, 2)
 
-    result2 = result2_1 * result1 * result2_3 * result2_4 * result2_5
+    result2 = result2_1 * result2_2 * result2_3 * result2_4 * result2_5
     print("Part II:", result2)
 
 
@@ -31,8 +32,9 @@ def countTrees(moveX, moveY):
     treeBoardHeight = len(treeBoard)
     treeBoardWidth = len(treeBoard[0])
 
-    # przeszukiwanie drzewa w pionie
-    while currentPositionY < treeBoardHeight:
+    # przeszukiwanie drzewa
+    while currentPositionY < treeBoardHeight: #dopóki nie doszliśmy do końca w pionie (płaszczyzna Y)
+
         # jesli wyszlismy w poziomie za dostepna plansze
         if currentPositionX > treeBoardWidth - 1:
             # to cofamy sie o szerokosc planszy do analogicznego punktu
